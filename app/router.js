@@ -8,6 +8,5 @@ module.exports = (app) => {
   router.get('/', controller.home.index);
   router.get('/pay', controller.pay.index);
   router.get('/wx', controller.wx.index);
-  router.post('/wx/phone', controller.wx.phone);
-  router.post('/wx/user', controller.wx.user);
+  router.post('/wx/decrypt', controller.wx.decrypt);
 };
