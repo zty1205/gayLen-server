@@ -12,6 +12,8 @@ class WxController extends Controller {
     const { ctx } = this;
     const query = ctx.request.query;
     const url = 'https://api.weixin.qq.com/sns/jscode2session';
+    console.log('appid = ', appId);
+    console.log('Pw = ', Project.WX);
     const result = await ctx.curl(url, {
       method: 'GET', // 设置请求方式 默认是GET
       dataType: 'json',
